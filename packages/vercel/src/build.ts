@@ -54,7 +54,7 @@ export function getEntries(
     entryPoints.push({
       source: filePath,
       destination: `api/${path.posix.join(parsed.dir, parsed.name)}.func`,
-      addRoute: true,
+      addRoute: false,
     });
 
     return entryPoints;
